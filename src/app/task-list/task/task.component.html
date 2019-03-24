@@ -1,11 +1,20 @@
 <div class="task-wrap">
   <div class="task-title-wrap">
       <span class="mark-done active"></span>
-      <span class="task-status ongoing">Ongoing</span>
-      <span class="task-title">Task title here</span>
+      <span
+        [ngClass]="{
+          'task-status': true,
+          'unstarted': task.status === 'unstarted',
+          'ongoing': task.status === 'ongoing',
+          'revising': task.status === 'revising',
+          'done': task.status === 'done'
+        }">
+        {{ task.status }}
+      </span>
+      <span class="task-title">{{ task.title }}</span>
   </div>
   <div class="task-links">
-      <a href="/details" class="btn task-details">Details</a>
+      <a [routerLink]="'/details/' + task.id" class="btn task-details">Details</a>
       <span class="delete-task btn-border">x</span>
   </div>
 </div>

@@ -1,6 +1,9 @@
 <div id="task-list">
-  <app-task></app-task>
-  <app-task></app-task>
-  <app-task></app-task>
-  <app-task></app-task>
+  <app-form></app-form>
+
+  <div class="task-list-wrap">
+    <!-- <p *ngFor="let task of taskList">{{ task.title }}</p> -->
+    <app-task *ngFor="let task of taskList" [task]="task"></app-task>
+
+  </div>
 </div>
