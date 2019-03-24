@@ -1,0 +1,45 @@
+.task-wrap
+    display: flex
+    justify-content: space-between
+    align-items: center
+    border: 1px solid #eeeeee
+    border-radius: 3px
+    padding: 12px
+    margin: 7px auto
+    span
+        vertical-align: middle
+
+.mark-done
+    display: inline-block
+    vertical-align: middle
+    margin: 0 5px 0 0
+    height: 20px
+    width: 20px
+    border-radius: 50%
+    border: 2px solid #00bb55
+    // background: #00aa00
+    cursor: pointer
+
+.task-status
+    font-size: 12px
+    text-transform: uppercase
+    border-radius: 99px
+    border: 1px solid #888888
+    color: #888888
+    padding: 3px 10px
+    margin: 0 5px 0 0
+    display: inline-block
+
+.btn.task-details
+  margin-right: 5px
+
+.done
+    .mark-done
+        background: #00bb55
+    .task-title
+        text-decoration: line-through
+        font-style: italic
+        color: #aaaaaa
+    .task-status
+        background: #888888
+        color: #ffffff

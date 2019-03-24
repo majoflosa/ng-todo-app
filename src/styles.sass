@@ -1,1 +1,64 @@
 /* You can add global styles to this file, and also import other style files */
+@import url('https://fonts.googleapis.com/css?family=Nunito:400,700')
+*
+  box-sizing: border-box
+
+body
+  margin: 0
+  font-family: 'Nunito', sans-serif
+  color: #555555
+
+.outer-wrap
+  min-height: 100vh
+  background: #f5f5f5
+  padding: 50px 0
+
+.content-wrap
+  width: 90%
+  max-width: 900px
+  margin: 0 auto
+  padding: 5px
+  background: #ffffff
+  border-radius: 3px
+  box-shadow: 0 2px 5px rgba(0,0,0,0.15)
+
+a, a:hover, a:active, a:visited
+  color: inherit
+  text-decoration: none
+
+.btn, a.btn
+  display: inline-block
+  text-transform: uppercase
+  padding: 4px 10px
+  font-size: 14px
+  border-radius: 3px
+  background: #bbbbbb
+  color: #ffffff
+  cursor: pointer
+  border: none
+  &:hover
+    background: #999999
+
+.btn-border
+  @extend .btn
+  padding: 3px 10px
+  background: none
+  border: 1px solid #bbbbbb
+  color: #bbbbbb
+  &:hover
+    background: #bbbbbb
+    color: #ffffff
+
+input[type="text"], textarea
+  display: block
+  border-radius: 3px
+  border: 1px solid #dddddd
+  padding: 8px 12px
+  margin: 0 auto
+  outline: none
+  font-family: inherit
+  &:focus
+    outline: none
+    border-color: #888888
+  &::placeholder
+    color: #bbbbbb
